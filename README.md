@@ -33,7 +33,7 @@ import nltk
 nltk.download("averaged_perceptron_tagger")
 nltk.download('wordnet')
 ```
-Run the cells in order to replicate the results in the report of: feature extraction, and the LightGBM training procedure. 
+Simply run the cells in order to replicate the results of report.
 
 
 ## Data exploration and Post-Training Analysis
