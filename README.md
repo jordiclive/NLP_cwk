@@ -25,6 +25,17 @@ The second notebook contains our work using BERT-style embeddings. A `model_type
 
 ## Handcrafted Features
 
+## 
+
+```python
+import nltk
+
+nltk.download("averaged_perceptron_tagger")
+nltk.download('wordnet')
+```
+Run the cells in order for feature extraction, and the gradient boosting algorithm. If you wish to train a model on a different set of features, simply alter the `features` parameter.
+
+
 ## Data exploration and Post-Training Analysis
 The additional data exploration and the post-training analysis we detail in our report is a part of our BERT notebook. To replicate our data exploration, along with the awesome word clouds that didn't make the cut for the report, you should:
 - change the data directories to point to where you locally store the dataset
@@ -35,4 +46,4 @@ To replicate our post-training experiments:
 - Manually load the LSTM and handcrafted predictions as `.npy` files  
 - Run the relevant section in the notebook
 ## Authors
-Bouas, Nikos, Clive, Jordan, Siomos, Vasilis 
+Bouas, Nikos; Clive, Jordan; Siomos, Vasilis 
