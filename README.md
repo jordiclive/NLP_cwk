@@ -1,24 +1,11 @@
 # NLP Coursework Task 1: Regression
 Our team chose to tackle the first task, that of regressing to the mean funniness score.
-We've split our approach into three parts, each with a corresponding notebook.
+We've split our approach into three parts, each with a corresponding notebook plus an extra notebook that contains code to replicate older LSTM experiments.
 
 ## Bi-LSTM approach
+The bi_lstm_preliminary_experiments notebook contains code to replicate older experiments that required significantly different network architectures compared to the last experiment. The variable 'experiment_type' that takes the values 'cosine_distance', 'insert_after', 'original_representation', 'simple_difference' determines which experiment is going to be run. The 'freeze_embeddings' flag determines whether the embedding layer is going to be finetuned or frozen.
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
-## 
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+The bi_lstm_approach notebook contains code to replicate the results of the last experiment. To validate the results simply re-run all the cells in the notebook.
 
 ## Contextual Embeddings
 The second notebook contains our work using BERT-style embeddings. A `model_type` flag, that takes the arguments `distilbert` and `roberta` controls whether a DistilBert or a RoBERTa-Large-MNLI model is used as the backbone. There's a separate section for our regression and our averaged classification model, which are described in the report. The hyper-parameter sets are also controlled by the `model_type` flag, and are the best we found during hyper-parameter tuning.
