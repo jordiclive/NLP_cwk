@@ -33,7 +33,7 @@ import nltk
 nltk.download("averaged_perceptron_tagger")
 nltk.download('wordnet')
 ```
-Run the cells in order for feature extraction, and the gradient boosting algorithm. If you wish to train a model on a different set of features, simply alter the `features` parameter.
+Run the cells in order to replicate the results in the report of: feature extraction, and the LightGBM training procedure. 
 
 
 ## Data exploration and Post-Training Analysis
